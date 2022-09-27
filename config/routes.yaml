@@ -5,3 +5,6 @@ controllers:
 lucky:
     path: /lucky
     controller: App\Controller\LuckyController::number
+product:
+    path: /products
+    controller: App\Controller\interfasy::list
