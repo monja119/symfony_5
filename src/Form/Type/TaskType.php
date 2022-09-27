@@ -8,8 +8,6 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-use Symfony\Component\OptionsResolver\OptionsResolver;
-
 class TaskType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
@@ -20,7 +18,6 @@ class TaskType extends AbstractType
         ->add('dueDate', DateType::class)
         ->add('save', SubmitType::class)
             ->setMethod('GET')
-            ->setFormFactory('task')
         ;
     }
 
