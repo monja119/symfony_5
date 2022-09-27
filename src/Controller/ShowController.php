@@ -2,8 +2,6 @@
 // src/Controller/TaskController.php
 namespace App\Controller;
 
-use App\Entity\Task;
-use App\Form\Type\TaskType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

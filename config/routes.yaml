@@ -15,4 +15,4 @@ session:
 
 email:
     path: /email
-    controller: App\Controller\SsController::sendEmail
+    controller: App\Controller\MailController::sendEmail
