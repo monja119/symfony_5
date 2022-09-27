@@ -8,3 +8,11 @@ lucky:
 product:
     path: /products
     controller: App\Controller\interfasy::list
+
+session:
+    path: /session
+    controller: App\Controller\SsController::session
+
+email:
+    path: /email
+    controller: App\Controller\SsController::sendEmail
