@@ -5,7 +5,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class LuckyController extends AbstractController
+    class LuckyController extends AbstractController
 {
     #[Route('/lucky', name:'lucky')]
     public function number(): Response

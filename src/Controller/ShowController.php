@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class ShowController extends AbstractController
 {
@@ -13,5 +14,12 @@ class ShowController extends AbstractController
     public function task(Request $request): Response
     {
         return new Response('Redirected');
+    }
+
+    #[Route('/translate', name: 'translate')]
+    public function trad(TranslatorInterface $translator): Response
+    {
+        $translated = $translator->trans('Hello');
+        return new Response($translated);
     }
 }
