@@ -16,3 +16,7 @@ session:
 email:
     path: /email
     controller: App\Controller\MailController::sendEmail
+
+translate:
+    path: /translate
+    controller : App\controller\MailController::index
