@@ -20,3 +20,7 @@ email:
 app_request:
     path: /request
     controller: App\Controller\HttpClientController::getInfo
+
+file:
+    path: /file
+    controller: App\Controller\FilesController::file
