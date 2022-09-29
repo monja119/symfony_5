@@ -16,3 +16,7 @@ session:
 email:
     path: /email
     controller: App\Controller\MailController::sendEmail
+
+app_request:
+    path: /request
+    controller: App\Controller\HttpClientController::getInfo
